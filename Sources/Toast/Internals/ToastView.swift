@@ -28,6 +28,7 @@ internal struct ToastView: View {
           .frame(width: 14)
       }
       Text(model.message)
+        .font(.system(size: 13))
         .lineLimit(1)
         .truncationMode(.tail)
       if let button = model.button {
